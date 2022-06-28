@@ -1,0 +1,139 @@
+.button-section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	
+	@media screen and (min-width: 1200px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
+}
+
+.container-button  {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 8px;
+	margin-bottom: 30px;
+
+	@media screen and (min-width:768px) {
+		justify-content: center;
+	}
+	
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+	}
+	
+	&__button {
+		display: inline-block;
+		padding: 6px 22px;
+		border: none;
+		border-radius: 4px;
+	
+		background: $section-background;
+	
+		font-family: inherit;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.63;
+		letter-spacing: 0.03em;
+		text-align: center;
+
+		transition: color $time $function-animation, background-color $time $function-animation, box-shadow $time $function-animation;
+		cursor: pointer;
+		}
+	
+	&__button:hover,
+	&__button:focus {
+		background-color: $accent-color;
+		color: $title-text-color;
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	}
+}
+
+.projects-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	
+	&__item {
+		display: block;
+		width: 100%;
+
+		@media screen and (min-width: 768px) and (max-width: 1200px){
+			flex-basis: calc((100% - 30px) / 2); 
+		}
+		 
+		@media screen and (min-width: 1200px) {
+			flex-basis: calc((100% - 60px) / 3); 
+		}
+	}
+}
+
+.img-content {
+	border: 1px solid $border-color;
+	border-top: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.project-card {
+	display: block;
+	position: relative;
+
+	transition: box-shadow $time $function-animation;
+
+	&__container {
+		position: relative;
+		overflow: hidden;
+	}
+	
+	&:hover,
+	&:focus {
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+		}
+	
+	&__title {
+		margin-bottom: 4px;
+	
+		color: $primary-text-color;
+	
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 2;
+		letter-spacing: 0.06em;
+	}
+	
+	&__description {
+		color: $secondary-text-color;
+	
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.88;
+	}
+}
+
+.project-card__text {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 63px 24px;
+	
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.56;
+	color: $title-text-color;
+	background: rgba(33, 150, 243, 0.9);
+
+	opacity: 0;
+	transform: translateY(100%);
+
+	transition: transform $time $function-animation, opacity $time $function-animation;
+	}
+
+.project-card:hover .project-card__text,
+.project-card:focus .project-card__text {
+	transform: translateY(0);
+	opacity: 1;
+}

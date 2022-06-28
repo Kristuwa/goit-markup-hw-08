@@ -1,0 +1,39 @@
+@media screen and (max-width: 1200px) {
+	.about {
+		display: none; }
+}
+
+.about {
+	padding-bottom: 94px;
+
+	&__list {
+		display: flex;
+	}
+	
+	&__item {
+		width: 370px;
+		position: relative;
+	}
+	
+	&__item + &__item {
+		margin-left: 30px;
+	}
+	
+	&__text {
+		position: absolute;
+		width: 100%;
+		height: 70px;
+		bottom: 0;
+		left: 0;
+		@extend %flex-block;
+		justify-content: center;
+		background: rgba(47, 48, 58, 0.8);
+	
+	
+		color: $title-text-color;
+	
+		font-weight: 700;
+		line-height: 1.14;
+		text-transform: uppercase;
+	}
+}
