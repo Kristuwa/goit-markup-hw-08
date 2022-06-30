@@ -12,15 +12,37 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	gap: 8px;
-	margin-bottom: 30px;
+
+	margin-bottom: 40px;
+
+	
 
 	@media screen and (min-width:768px) {
 		justify-content: center;
+		margin-bottom: 30px;
 	}
 	
 	@media screen and (min-width: 1200px) {
 		margin-bottom: 50px;
+	}
+
+	&__item {
+	
+		&:not(:last-child) {
+			padding-right: 8px;
+		}
+
+		@media screen and (max-width:479px) {
+			&:nth-child(3){
+				padding-bottom: 15px;
+			}
+		}
+
+		@media screen and (max-width:767px) {
+			&:nth-child(2){
+				padding-bottom: 15px;
+			}
+		}
 	}
 	
 	&__button {
@@ -53,23 +75,32 @@
 .projects-list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 30px;
-	
+	justify-content: center;
+
+	@media screen and (min-width: 768px){
+		margin: -15px;
+
+	}
+
+		
 	&__item {
 		display: block;
-		width: 100%;
+		margin-bottom: 30px;
 
-		@media screen and (min-width: 768px) and (max-width: 1200px){
-			flex-basis: calc((100% - 30px) / 2); 
+		@media screen and (min-width: 768px) and (max-width: 1199px){
+			flex-basis: calc((100% - 60px) / 2);
+			margin: 15px;
 		}
 		 
 		@media screen and (min-width: 1200px) {
-			flex-basis: calc((100% - 60px) / 3); 
+			flex-basis: calc((100% - 90px) / 3);
+			margin: 15px;
 		}
 	}
 }
 
 .img-content {
+	flex-grow: 1;
 	border: 1px solid $border-color;
 	border-top: none;
 	padding-top: 20px;
@@ -79,7 +110,9 @@
 }
 
 .project-card {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 	position: relative;
 
 	transition: box-shadow $time $function-animation;

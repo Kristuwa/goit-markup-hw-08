@@ -15,7 +15,7 @@
 <header>
 	<div class="header container">
 		<nav class="header__nav">
-			<a href="./index.html" class="logo link"><span class="logo__title">Web</span>Studio</a>
+			<a href="/index.html" class="logo link"><span class="logo__title">Web</span>Studio</a>
 			<button type="button" 
 						class="header__menu-btn" 
 						data-menu-btn 
@@ -28,8 +28,8 @@
 			</button>
 			<div class="menu-container" id="menu-container" data-menu>
 				<ul class="site-nav list-style">
-					<li class="site-nav__item"><a href="./index.html"  class="site-nav__link link site-nav__link--active">Студия</a></li>
-					<li class="site-nav__item"><a href="./portfolio.html"  class="site-nav__link link">Портфолио</a></li>
+					<li class="site-nav__item"><a href="/index.html"  class="site-nav__link link site-nav__link--active">Студия</a></li>
+					<li class="site-nav__item"><a href="/portfolio.html"  class="site-nav__link link">Портфолио</a></li>
 					<li class="site-nav__item"><a href=""  class="site-nav__link link">Контакты</a></li>
 				</ul>
 				<ul class="header__info list-style">
@@ -210,8 +210,7 @@
 					<source 
 					srcset="./images/about-desktop-01.jpg 1x, ./images/about-desktop-01@2x.jpg 2x"
 					type="image/jpeg"
-					media="(min-width: 1200px)"
-					sizes="(min-width: 1200px) 370px, 33.33vw"/>
+					media="(min-width: 1200px)"/>
 					<img src="./images/about-desktop-01.jpg"
 					alt="десктопные приложения" />
 				</picture>
@@ -222,8 +221,7 @@
 					<source 
 					srcset="./images/about-desktop-02.jpg 1x, ./images/about-desktop-02@2x.jpg 2x"
 					type="image/jpeg"
-					media="(min-width: 1200px)"
-					sizes="(min-width: 1200px) 370px, 33.33vw"/>
+					media="(min-width: 1200px)"/>
 					<img src="./images/about-desktop-02.jpg"
 					alt="мобильные приложения" />
 				</picture>
@@ -231,13 +229,15 @@
 			</li>
 			<li class="about__item">
 				<picture>
+
 					<source 
 					srcset="./images/about-desktop-03.jpg 1x, ./images/about-desktop-03@2x.jpg 2x"
 					type="image/jpeg"
-					media="(min-width: 1200px)"
-					sizes="(min-width: 1200px) 370px, 33.33vw"/>
+					media="(min-width: 1200px)"/>
+
 					<img src="./images/about-desktop-03.jpg"
 					alt="дизайнерские решения" />
+
 				</picture>
 					<p class="about__text">Дизайнерские решения</p>
 			</li>
@@ -252,26 +252,25 @@
 			<li class="section-team__item">
 
 				<picture>
-					<source 
-					srcset="./images/member-01-mobile.jpg 1x, ./images/member-01-mobile@2x.jpg 2x"
-					type="image/jpeg"
-					media="(max-width: 767px)"
-					sizes="(max-width: 767px) 450px, 100vw"/>
-
-					<source 
-					srcset="./images/member-01-tablet.jpg 1x, ./images/member-01-tablet@2x.jpg 2x"
-					type="image/jpeg"
-					media="(min-width: 768px)"
-					sizes="(min-width: 768px) 354px, 50vw"/>
 
 					<source 
 					srcset="./images/member-01-desktop.jpg 1x, ./images/member-01-desktop@2x.jpg 2x"
 					type="image/jpeg"
-					media="(min-width: 1200px)"
-					sizes="(min-width: 1200px) 270px, 25vw"/>
+					media="(min-width: 1200px)"/>
 
-					<img src="./images/member-01-desktop.jpg"
-					alt="Игорь Демьяненко" /> 
+					<source 
+					srcset="./images/member-01-tablet.jpg 1x, ./images/member-01-tablet@2x.jpg 2x"
+					type="image/jpeg"
+					media="(min-width: 768px)"/>
+
+					<source 
+					srcset="./images/member-01-mobile.jpg 1x, ./images/member-01-mobile@2x.jpg 2x"
+					type="image/jpeg"
+					media="(min-width: 480px)"/>
+
+					<img src="./images/member-01-mobile.jpg"
+					alt="Игорь Демьяненко" 
+					/> 
 				</picture>
 
 					<div class="photo-card">
@@ -317,26 +316,25 @@
 			<li class="section-team__item">
 
 				<picture>
-					<source 
-					srcset="./images/member-02-mobile.jpg 1x, ./images/member-02-mobile@2x.jpg 2x"
-					type="image/jpeg"
-					media="(max-width: 767px)"
-					sizes="(max-width: 767px) 450px, 100vw"/>
-
-					<source 
-					srcset="./images/member-02-tablet.jpg 1x, ./images/member-02-tablet@2x.jpg 2x"
-					type="image/jpeg"
-					media="(min-width: 768px)"
-					sizes="(min-width: 768px) 354px, 50vw"/>
 
 					<source 
 					srcset="./images/member-02-desktop.jpg 1x, ./images/member-02-desktop@2x.jpg 2x"
 					type="image/jpeg"
-					media="(min-width: 1200px)"
-					sizes="(min-width: 1200px) 270px, 25vw"/>
+					media="(min-width: 1200px)"/>
 
-					<img src="./images/member-02-desktop.jpg"
-					alt="Ольга Репина" /> 
+					<source 
+					srcset="./images/member-02-tablet.jpg 1x, ./images/member-02-tablet@2x.jpg 2x"
+					type="image/jpeg"
+					media="(min-width: 768px)"/>
+
+					<source 
+					srcset="./images/member-02-mobile.jpg 1x, ./images/member-02-mobile@2x.jpg 2x"
+					type="image/jpeg"
+					media="(min-width: 480px)"/>
+
+					<img src="./images/member-02-mobile.jpg"
+					alt="Ольга Репина"
+					 /> 
 				</picture>
 				
 					<div class="photo-card">
@@ -382,26 +380,25 @@
 			<li class="section-team__item">
 
 				<picture>
-					<source 
-					srcset="./images/member-03-mobile.jpg 1x, ./images/member-03-mobile@2x.jpg 2x"
-					type="image/jpeg"
-					media="(max-width: 767px)"
-					sizes="(max-width: 767px) 450px, 100vw"/>
-
-					<source 
-					srcset="./images/member-03-tablet.jpg 1x, ./images/member-03-tablet@2x.jpg 2x"
-					type="image/jpeg"
-					media="(min-width: 768px)"
-					sizes="(min-width: 768px) 354px, 50vw"/>
 
 					<source 
 					srcset="./images/member-03-desktop.jpg 1x, ./images/member-03-desktop@2x.jpg 2x"
 					type="image/jpeg"
-					media="(min-width: 1200px)"
-					sizes="(min-width: 1200px) 270px, 25vw"/>
+					media="(min-width: 1200px)"/>
 
-					<img src="./images/member-03-desktop.jpg"
-					alt="Николай Тарасов" /> 
+					<source 
+					srcset="./images/member-03-tablet.jpg 1x, ./images/member-03-tablet@2x.jpg 2x"
+					type="image/jpeg"
+					media="(min-width: 768px)"/>
+
+					<source 
+					srcset="./images/member-03-mobile.jpg 1x, ./images/member-03-mobile@2x.jpg 2x"
+					type="image/jpeg"
+					media="(min-width: 480px)"/>
+
+					<img src="./images/member-03-mobile.jpg"
+					alt="Николай Тарасов"
+					/> 
 				</picture>
 
 					<div class="photo-card">
@@ -448,26 +445,25 @@
 			<li class="section-team__item">
 
 				<picture>
-					<source 
-					srcset="./images/member-04-mobile.jpg 1x, ./images/member-04-mobile@2x.jpg 2x"
-					type="image/jpeg"
-					media="(max-width: 767px)"
-					sizes="(max-width: 767px) 450px, 100vw"/>
-
-					<source 
-					srcset="./images/member-04-tablet.jpg 1x, ./images/member-04-tablet@2x.jpg 2x"
-					type="image/jpeg"
-					media="(min-width: 768px)"
-					sizes="(min-width: 768px) 354px, 50vw"/>
 
 					<source 
 					srcset="./images/member-04-desktop.jpg 1x, ./images/member-04-desktop@2x.jpg 2x"
 					type="image/jpeg"
-					media="(min-width: 1200px)"
-					sizes="(min-width: 1200px) 270px, 25vw"/>
+					media="(min-width: 1200px)"/>
 
-					<img src="./images/member-04-desktop.jpg"
-					alt="Михаил Ермаков" /> 
+					<source 
+					srcset="./images/member-04-tablet.jpg 1x, ./images/member-04-tablet@2x.jpg 2x"
+					type="image/jpeg"
+					media="(min-width: 768px)"/>
+
+					<source 
+					srcset="./images/member-04-mobile.jpg 1x, ./images/member-04-mobile@2x.jpg 2x"
+					type="image/jpeg"
+					media="(min-width: 480px)"/>
+
+					<img src="./images/member-04-mobile.jpg"
+					alt="Михаил Ермаков"
+					/> 
 				</picture>
 
 					<div class="photo-card">
