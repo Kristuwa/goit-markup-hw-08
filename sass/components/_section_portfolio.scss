@@ -151,11 +151,11 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	padding: 63px 24px;
+	padding: 15px 15px;
 	
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 1.56;
+	font-size: 16px;
+	line-height: 1.42;
 	color: $title-text-color;
 	background: rgba(33, 150, 243, 0.9);
 
@@ -163,6 +163,16 @@
 	transform: translateY(100%);
 
 	transition: transform $time $function-animation, opacity $time $function-animation;
+
+	@media screen and (min-width: 480px) {
+		padding: 83px 24px;
+		font-size: 18px;
+		line-height: 1.56;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 63px 24px;
+	}
 	}
 
 .project-card:hover .project-card__text,
