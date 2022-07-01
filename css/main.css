@@ -1051,7 +1051,7 @@ label:nth-last-of-type(2) {
 .checkbox__input:checked + .checkbox__icon {
   background-color: #2196F3;
   border-color: #2196F3;
-  background-image: url(./images/check.svg);
+  background-image: url(../images/check.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-origin: border-box;

@@ -368,7 +368,7 @@ label:nth-last-of-type(2) {
 .checkbox__input:checked + .checkbox__icon {
 	background-color: $accent-color;
 	border-color: $accent-color;
-	background-image: url(./images/check.svg);
+	background-image: url(../images/check.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-origin: border-box;
